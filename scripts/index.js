@@ -32,10 +32,7 @@ function addNewTask() {
    function deleteTask(event) {
     const closestTask = event.target.closest('.task')
     closestTask.classList.add('removed')
-    setTimeout(function() {
-        closestTask.remove()
-        
-      }, 1100); 
+    
     
    }
     //Function, for when a task is completet, it should toggle the finished class and run the confetti.
